@@ -1,0 +1,162 @@
+body{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nike{
+    background-color:rgb(80, 79, 79);
+    height: 90vh;
+    width: 80vw;
+    padding: 20px;
+    margin: 50px;
+    border-radius:5%;
+    text-align: center;
+}
+.navbar{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.logo{
+    font-size: xx-large;
+}
+.menu{
+    display: flex;
+    gap:2px;
+    align-items: center;
+    justify-content:space-evenly;
+    font-size:small;
+    
+}
+.item{
+    display: flex;
+    flex-direction:column;
+}
+.text{
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px;
+}
+.maintitle{
+    font-size:x-large;
+}
+.Travis{
+    font-size: large;
+}
+.content{
+    font-size:medium;
+}
+.photo{
+    height:200px;
+    align-items: center;
+    margin-top: 100px;
+    justify-content: center;
+}
+img{
+    height:200px;
+    width: 300px;
+    z-index: 1000;
+}
+
+.photo::after{
+    content:"";
+    background-color: rgb(236, 236, 240);
+    opacity:15%;
+    height: 60vh;
+    width: 60vw;
+    position:absolute;
+    border-radius:50%;
+    z-index:10;
+    left: 25%;
+}
+    @media(min-width:601px) and (max-width:800px){
+        .nike{
+            width: 80vw;
+        }
+        .logo{
+            text-align: left;
+        }
+        .navbar{
+            height: 50px;
+        }
+        .menu{
+            align-items: end;
+            justify-content: end;
+            gap: 20px;
+        }
+        .item{
+            flex-direction: row;
+            height: 90vh;
+        }
+        .text{
+            gap:50px;
+        }
+        .photo::after{
+            content:"";
+            background-color: rgb(236, 236, 240);
+            opacity:15%;
+            height: 80vh;
+            width: 80vw;
+            position:absolute;
+            border-radius:50%;
+            z-index:10;
+            left: 50%;
+            top: 25%;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+        }
+
+    }
+    
+    @media(min-width:801px){
+        .nike{
+            height: 80vh;
+            width: 80vw;
+        }
+        .logo{
+            text-align: left;
+        }
+        .navbar{
+            height: 100px;
+,          }
+        .menu{
+            align-items: end;
+            justify-content: end;
+            gap: 20px;
+        }
+        .item{
+            flex-direction: row;
+        }
+        .text{
+            width: 100%;
+            height: 100%;
+        }
+        .photo::after{
+            content:"";
+            background-color: rgb(236, 236, 240);
+            opacity:15%;
+            height: 80vh;
+            width: 80vw;
+            position:absolute;
+            border-radius:50%;
+            z-index:10;
+            left: 50%;
+            top: 15%;
+        }
+        .photo{
+            height:200px;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: center;
+        }
+        img{
+            height: 400px;
+            width: 400px;
+        }
+    }
+    
